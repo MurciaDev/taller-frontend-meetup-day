@@ -74,7 +74,18 @@ CSS nos permite modificar el comportamiento para que nuestras etiquetas puedan r
 
 ### Otras propiedades CSS
 
+- `color` : color de la fuente
+- `background-color`: color de fondo
+- `background-image`: imagen de fondo
+- `font-family`: tipo de fuente
+- `font-size`: tamaño de la fuente
+- `width`: ancho
+- `height`: alto
+
+[referencia de todas las propiedades *CSS*](https://www.w3schools.com/cssref/)
 
 # Recursos
 
 - [Learn to Code HTML & CSS from @shayhowe](http://learn.shayhowe.com/html-css/)
+- [Tachyons](http://tachyons.io/)
+- [Bootstrap](http://getbootstrap.com/)
