@@ -17,9 +17,9 @@ Lo primero que tenemos que saber es que **Html** **NO** es un lenguage de progra
 
 <i>El frontend mola!</i>
 
-- `<h1>Meetup Day</h1>` :
+- `<h6>Meetup Day</h6>` :
 
-<h1>Meetup Day</h1>
+<h6>Meetup Day</h6>
 
 Podemos ver el listado de todas las etiquetas *html* que hay en [w3schools](https://www.w3schools.com/tags/), aunque parezca un listado enorme, no os debéis preocupar porque sólo se suelen utilizar un pequeño número de ellas.
 
@@ -50,11 +50,27 @@ Formar el documento correctamente de estructura y semántica ayudará a que los 
 ## CSS (Cascade StyleSheets)
 Ahora que ya estamos familiarizados con *Html* vamos a ver cómo se muestran esas etiquetas en pantalla. En este proceso vamos hablar sobre lo que se conoce como *mode lo de cajas* y las propiedades *CSS* que permiten que nuestras etiquetas se representen en pantalla con estilos diferentes al estilo que el navegador aplica por defecto a las etiquetas.
 
-### Modelo de cajas
-
 ### Etiquetas de bloque y en linea
 
+### Modelo de cajas
+
+Las etiquetas de nuestro documento se renderizan en el navegador como cajas. Estas cajas tienen tienen diferentes secciones. En la imagen de abajo se puede ver cómo se estructuran las seciones de una caja.
+
+![modelo de cajas](.github/images/box-model.png)
+
+El ancho de la caja viene definido por el **ancho del contenido** más el **padding izquierdo y derecho** y el **borde izquierdo y derecho**, por otro lado la altura viene definida por **la altura del contenido** más el **padding superior e inferior** y el  **borde superior e inferior**. 
+
 ### Posicionamiento
+
+CSS nos permite modificar el comportamiento para que nuestras etiquetas puedan renderizarse en otro lugar diferente al que se renderizarían por defecto. Para ello, utilizaremos la propiedad *CSS* `position`. Esta propiedad puede tomar cuatro valores: `static`, `relative`, `fixed` y `absolute`.
+
+- **static**: Es el posicionamiento por defecto. Las etiquetas se renderizarán de arriba a abajo y de izquierda a derecha cuando las etiquetas se muestre en linea (con `display: inline`).
+
+- **relative**: Nos permite *empujar* la etiqueta respecto a la posición en la que sería renderizada por defecto. Se puede usar en combinación de las propiedades *CSS* `top`, `right`, `bottom` y `left` para desplazarlo un número de *píxeles* u otra medida desde arriba, la derecha etc.
+
+- **fixed**: Nos permite fijar un elemento o etiqueta en una posicion determinada de la pantalla. El elemento siempre permanecerá en esa posición de la pantalla aunque hamos *scroll*. También podremos usarlo en combinación con `top`, `right`, `bottom` y `left`, donde `top` será la parte superior de la pantalla, `right` será la parte derecha de la pantalla y así...
+
+- **absolute**: Nos permite posicionar un elemento tomando como referencia el ancestro posicionado de manera diferente a `static`, de esta forma `top`, `right`, `bottom` y `left` harán referencia a ese elemento.
 
 ### Otras propiedades CSS
 
