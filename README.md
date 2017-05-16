@@ -7,7 +7,7 @@ Id a [brackets.io](http://brackets.io/) y descargar la aplicación que está dis
 
 ## Html 
 
-Lo primero que tenemos que saber es que **Html** **NO** es un lenguage de programación, si no que es un lenguage de marcas, esto quiere decir que simplemente es un lenguaje que usamos para añadir información adicional de presentación o estructura a un texto. Así, de esta forma, podremos hacer cosas tansimples como escribir `<b>Hola Mundo!</b>` para escribir `Hola Mundo!` en negrita. Pongamos unos ejemplos de código `Html`:
+Lo primero que tenemos que saber es que **Html** **NO es un lenguage de programación**, si no que **es un lenguage de marcas**, esto quiere decir que simplemente es un lenguaje que usamos para añadir información adicional de presentación o estructura a un texto. Así, de esta forma, podremos hacer cosas tansimples como escribir `<b>Hola Mundo!</b>` para escribir `Hola Mundo!` en negrita. Pongamos unos ejemplos de código `Html`:
 
 - `<b>Hola Mundo!</b>` :
 
@@ -84,8 +84,10 @@ CSS nos permite modificar el comportamiento para que nuestras etiquetas puedan r
 
 [referencia de todas las propiedades *CSS*](https://www.w3schools.com/cssref/)
 
-# Recursos
+
+## Recursos
 
 - [Learn to Code HTML & CSS from @shayhowe](http://learn.shayhowe.com/html-css/)
 - [Tachyons](http://tachyons.io/)
 - [Bootstrap](http://getbootstrap.com/)
+- [Dwyl learn tachyons](https://github.com/dwyl/learn-tachyons)
