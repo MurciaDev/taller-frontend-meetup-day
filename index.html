@@ -7,62 +7,256 @@
       un comentario y no sera renderizado
     -->
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Taller de Iniciacion al Frontend</title>
-    <style>
-/* esto es un comentario CSS */
-h1 {
-  color: brown;
-}
-    </style>
-    <!--
-      con la etiqueta link podemos importar archivos CSS externos, en este caso vamos a 
-      importar un fichero CSS que contiene un conjunto de reglas.
-      En este caso este fichero es una libreria llamada Tachyons.
-      Para poder utilizarla, habrá que sacar la linea de debajo del comentario.
-    -->
-    <link rel="stylesheet" href="https://unpkg.com/tachyons@4.7.0/css/tachyons.min.css"/>
   </head>
-  <body class="bg-near-white avenir dark-gray">
-    <section class="w-100 vh-25 bg-gold">
-      <div class="mw-100 mw8-ns center ph5-l ph4 pt5">
-        <h1 class="serif white normal f2 f1-ns lh-title pt4-l">Meetup Day - Frontend</h1>
-        <div class="orange f3 lh-copy">Taller de frontend</div>
+  <body class="bg-near-white sans-serif dark-gray">
+    <header class="header bg-gold relative">
+      <div class="max-width">
+        <h1 class="title white serif">Meetup Day</h1>
+        <div class="subtitle orange absolute bottom">Taller de frontend</div>
+      </div>
+    </header>
+
+    <section class="max-width section">
+      <h2 class="section-title">Currently</h2>
+      <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean a felis lectus. Suspendisse id massa sodales, dictum tortor venenatis, vehicula metus. Vivamus posuere vehicula eleifend. Maecenas pretium augue sit amet quam semper, ultrices molestie odio dapibus. Ut vitae bibendum est. Pellentesque lacinia elementum volutpat. Integer vehicula, nunc eu consectetur tempor, arcu nisi consequat orci, non vulputate sapien quam nec nunc. In pulvinar sapien eu quam eleifend malesuada quis eu leo. Donec nec sapien et neque auctor pharetra non id lectus. Nulla non mi id orci cursus dictum. Nulla finibus eu ipsum sit amet finibus. Maecenas placerat posuere enim, nec sodales urna blandit quis.
+      </p>
+    </section>
+
+    <section class="max-width section">
+      <h2 class="section-title">Previously</h2>
+      <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean a felis lectus. Suspendisse id massa sodales, dictum tortor venenatis, vehicula metus. Vivamus posuere vehicula eleifend. Maecenas pretium augue sit amet quam semper, ultrices molestie odio dapibus. Ut vitae bibendum est. Pellentesque lacinia elementum volutpat. Integer vehicula, nunc eu consectetur tempor, arcu nisi consequat orci, non vulputate sapien quam nec nunc. In pulvinar sapien eu quam eleifend malesuada quis eu leo. Donec nec sapien et neque auctor pharetra non id lectus. Nulla non mi id orci cursus dictum. Nulla finibus eu ipsum sit amet finibus. Maecenas placerat posuere enim, nec sodales urna blandit quis.
+      </p>
+    </section>
+
+    <section class="max-width section overflow-auto">
+      <h2 class="section-title">Projects</h2>
+      <div class="relative fl w-25 border-box overflow-hidden ba white">
+        <div class="grow cover pv" style="background-image:url(https://s3-us-west-2.amazonaws.com/prnt/hw-080411-cargo_960.jpg);">
+          <h3 class="project-title bg-dark-gray-transparent absolute fullContainer ta-center show">Project 1</h3>
+        </div>
+      </div>
+      <div class="relative fl w-25 border-box overflow-hidden ba white">
+        <div class="grow cover pv" style="background-image:url(https://s3-us-west-2.amazonaws.com/prnt/hwspringtour-cargo_960-1.jpg);">
+          <h3 class="project-title bg-dark-gray-transparent absolute fullContainer ta-center show">Project 2</h3>
+        </div>
+      </div>
+      <div class="relative fl w-25 border-box overflow-hidden ba white">
+        <div class="grow cover pv" style="background-image:url(https://s3-us-west-2.amazonaws.com/prnt/cc010611.s_960.jpg);">
+          <h3 class="project-title bg-dark-gray-transparent absolute fullContainer ta-center show">Project 3</h3>
+        </div>
+      </div>
+      <div class="relative fl w-25 border-box overflow-hidden ba white">
+        <div class="grow cover pv" style="background-image:url(https://s3-us-west-2.amazonaws.com/prnt/adam-stern-031209_960-2.jpg);">
+          <h3 class="project-title bg-dark-gray-transparent absolute fullContainer ta-center show">Project 4</h3>
+        </div>
       </div>
     </section>
 
-    <section class="mw-100 mw8-ns center ph5-l ph4 mt3 mb5">
-      <h2 class="mt5 mb3 fw6 f4 ttu tracked pb2 pr3 dib">Currently</h2>
-      <p class="mt2 lh-copy f3">Some content</p>
-      <h2 class="mt4 mb3 fw6 f4 ttu tracked titular-underline-teal pb2 pr3 dib">Previously</h2>
-      <p class="mt2 lh-copy f3">Things I've been doing before</p>
-      <p class="mt2 lh-copy f3">More things I did</p>
-    </section>
-
-    <section class="mw-100 mw8-ns center ph5-l ph4 mt3 mb5 cf">
-      <h2 class="f4 ttu fw6 tracked mb4 avenir">Projects</h2>
-      <a href="#0" class="fl w-third w-25-ns border-box overflow-hidden ba bw2 white" title="">
-        <div class="grow cover bg-center pv5 pv6-l" style="background-image:url(https://s3-us-west-2.amazonaws.com/prnt/hw-080411-cargo_960.jpg);"></div>
-      </a>
-      <a href="#0" class="fl w-third w-25-ns border-box overflow-hidden  ba bw2 white" title="">
-        <div class="grow cover bg-top pv5 pv6-l" style="background-image:url(https://s3-us-west-2.amazonaws.com/prnt/hwspringtour-cargo_960-1.jpg);"></div>
-      </a>
-      <a href="#0" class="fl w-third w-25-ns border-box overflow-hidden ba bw2 white" title="">
-        <div class="grow cover bg-top pv5 pv6-l" style="background-image:url(https://s3-us-west-2.amazonaws.com/prnt/cc010611.s_960.jpg);"></div>
-      </a>
-      <a href="#0" class="fl w-100 w-25-ns border-box overflow-hidden ba bw2 white" title="">
-        <div class="grow cover bg-top pv5 pv6-l" style="background-image:url(https://s3-us-west-2.amazonaws.com/prnt/adam-stern-031209_960-2.jpg);"></div>
-      </a>
-    </section>
-
-    <footer class="pv4 white bg-dark-gray footer vh-50">
-      <div class="mw-100 mw8-ns center pv0 ph5-l ph4 z-1 relative mt3">
-        <div class="mt3 mb4 mb3-ns">
-          <a href="https://twitter.com/g_perales" title="Twitter" class="white f4 fw5 db dib-ns pr4 link mint dim mb2">Twitter</a>
-          <a href="https://github.com/gabrielperales" title="Github" class="white f4 fw5 db dib-ns pr4 link mint dim mb2">Github</a>
-          <a href="https://www.linkedin.com/in/gabrielperales" title="LinkedIn" class="white f4 fw5 db dib-ns pr4 link mint dim mb2">LinkedIn</a>
+    <footer class="bg-dark-gray footer">
+      <div class="max-width">
+        <div class="social-links">
+          <a href="https://twitter.com/g_perales" title="Twitter">Twitter</a>
+          <a href="https://github.com/gabrielperales" title="Github">Github</a>
+          <a href="https://www.linkedin.com/in/gabrielperales" title="LinkedIn">LinkedIn</a>
         </div>
       </div>
     </footer>
   </body>
+  <style>
+/* esto es un comentario CSS */
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+      .header, .footer {
+        height: 25vh;  
+        padding: 2em 0;
+        clear: both;
+      }
+
+      /* Position */
+      .relative {
+        position: relative;
+      }
+
+      .absolute {
+        position: absolute;
+      }
+
+      .fullContainer {
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+      }
+
+      .top {
+        top: 0;
+      }
+
+      .bottom {
+        bottom: 0;
+      }
+
+      .left {
+        left: 0;
+      }
+
+      .right {
+        right: 0;
+      }
+
+      /* Fonts */
+      .serif {
+        font-family: georgia, times, serif;
+      }
+
+      .sans-serif {
+        font-family: avenir next, avenir, sans-serif;
+      }
+
+      /* Colors */
+      .white {
+        color: white;
+      }
+
+      .dark-gray {
+        color: #333;
+      }
+
+      .orange {
+        color: #ff6300;
+      }
+
+      /* Background colors */
+      .bg-near-white {
+        background-color: #f4f4f4;
+      }
+
+      .bg-dark-gray {
+        background-color: #333;
+      }
+
+      .bg-dark-gray-transparent {
+        background-color: rgba(48, 48, 48, 0.8);
+      }
+
+      .bg-gold {
+        background-color: #ffb700;
+      }
+
+      /* Titles */
+      .title {
+        line-height: 1.25;
+        font-weight: 400;
+        font-size: 3em;
+      }
+
+      .subtitle {
+        font-size: 1.5em;
+      }
+
+      /* Section */
+      .section {
+        margin-bottom: 2em;
+      }
+
+      .section-title {
+        font-size: 1.25em;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: .1em;
+        padding-bottom: .5em;
+        margin-bottom: 1em;
+      }
+
+      /* Projects */
+      .project-title {
+        margin: 0;
+        padding: 1em;
+      }
+
+      /* Social Links */
+      .social-links {
+        font-size: 1.25em;
+      }
+
+      .social-links a {
+        color: white;
+        margin: 0 1em 0 0;
+        text-decoration: none;
+        transition: color .2s;
+      }
+
+      .social-links a:hover {
+        color: #999;
+      }
+
+      /* Helpers */
+      .max-width {
+        max-width : 960px;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 0 1em;
+      }
+
+      .ta-center {
+        text-align: center;
+      }
+
+      .fl {
+        float: left;
+      }
+
+      .w-25 {
+        width: 25%;
+      }
+
+      .overflow-hidden {
+        overflow: hidden;
+      }
+
+      .overflow-auto {
+        overflow: auto;
+      }
+
+      .border-box {
+        box-sizing: border-box;
+      }
+
+      .ba {
+        border: 2px;
+      }
+
+      .cover {
+        background-size: cover;
+      }
+
+      .grow {
+        transition: transform .25s ease-out;
+      }
+
+      .grow:hover {
+        transform: scale(1.05, 1.05);
+      }
+
+      .show {
+        transition: opacity .25s ease-out;
+        opacity: 0;
+      }
+
+      .show:hover {
+        opacity: 1;
+      }
+
+      .pv {
+        padding-top: 5em;
+        padding-bottom: 5em;
+      }
+  </style>
 </html>
