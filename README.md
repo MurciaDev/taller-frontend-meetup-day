@@ -122,7 +122,7 @@ Una vez dentro de la página que enlaza nos da la opción de crear nuestro repos
 
 ![Creando el repositorio](.github/images/new-repo.png)
 
-Una vez que el repositorio esté creado github nos provee los pasos a seguir para configurarlo en nuestro ordenador para subir los HTML + CSS + JS que consideremos. 
+Una vez que el repositorio esté creado github nos provee los pasos a seguir para configurarlo en nuestro ordenador para subir los HTML + CSS + JS que consideremos. Podréis hacerlo mediante línea de comandos o vuestro software para `git` preferido ([Tortoise](https://tortoisegit.org/), [Gitkraken](https://www.gitkraken.com/), vuestro IDE, etc... )
 
 ![Configurando el repositorio](.github/images/setting-up-repo.png)
 
