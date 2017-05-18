@@ -21,7 +21,9 @@ Lo primero que tenemos que saber es que **Html** **NO es un lenguage de programa
 
 <h6>Meetup Day</h6>
 
-Podemos ver el listado de todas las etiquetas *html* que hay en [Developer Mozilla](https://developer.mozilla.org/en-US/docs/Web/HTML/Element), aunque parezca un listado enorme, no os debéis preocupar porque sólo se suelen utilizar un pequeño número de ellas.
+Para leer una definición más completa sobre *Html*, pueden ir a [Mozilla Developer Networkd (MDN)](https://developer.mozilla.org/es/docs/Web/HTML).
+
+También podemos ver el listado de todas las etiquetas *html* que hay en [MDN](https://developer.mozilla.org/es/docs/Web/HTML/Elemento), aunque parezca un listado enorme, no os debéis preocupar porque sólo se suelen utilizar un pequeño número de ellas.
 
 ### Etiquetas no semánticas
 Hay ciertas etiquetas que no añaden información al contenido al que envuelven, éstas etiquetas son `<div></div>` y `<span></span>` que simplemente nos ayudan a estructurar el documento y luego más tarde podremos modificar como se muestra su contenido en pantalla mediante reglas de estilo *Cascade StyleSheets* (*CSS*). La diferencia entre `<div></div>` y `<span></span>` la veremos más adelante.
@@ -82,12 +84,20 @@ CSS nos permite modificar el comportamiento para que nuestras etiquetas puedan r
 - `width`: ancho
 - `height`: alto
 
-[referencia de todas las propiedades *CSS*](https://www.w3schools.com/cssref/)
+[referencia de todas las propiedades *CSS*](https://developer.mozilla.org/es/docs/Web/CSS/Referencia_CSS)
 
+### Siguientes pasos
+En esta documentación del taller nos dejamos muchas cosas por explicar, aunque si que se explicarán durante la ejecución del taller, no obstante quiero hacer un pequeño listado de las cosas importantes que 
+no están aquí documentadas cómo: 
+
+- Selectores *CSS*, aplicar estilos a elementos por `id`, `clase`, etc...
+- **Otros modos de representar etiquetas en la pantalla** tales como `display: table`, `display: inline-block` o el mas reciente y potente `display: flex`. 
+- *Flotar* elementos en pantalla con `float: left` y `float: rigth`. 
 
 ## Recursos
 
 - [Learn to Code HTML & CSS from @shayhowe](http://learn.shayhowe.com/html-css/)
+- [Mozilla Developer Network](https://developer.mozilla.org/es/)
 - [Tachyons](http://tachyons.io/)
 - [Bootstrap](http://getbootstrap.com/)
 - [Dwyl learn tachyons](https://github.com/dwyl/learn-tachyons)
