@@ -21,7 +21,7 @@ Lo primero que tenemos que saber es que **Html** **NO es un lenguage de programa
 
 <h6>Meetup Day</h6>
 
-Podemos ver el listado de todas las etiquetas *html* que hay en [w3schools](https://www.w3schools.com/tags/), aunque parezca un listado enorme, no os debéis preocupar porque sólo se suelen utilizar un pequeño número de ellas.
+Podemos ver el listado de todas las etiquetas *html* que hay en [Developer Mozilla](https://developer.mozilla.org/en-US/docs/Web/HTML/Element), aunque parezca un listado enorme, no os debéis preocupar porque sólo se suelen utilizar un pequeño número de ellas.
 
 ### Etiquetas no semánticas
 Hay ciertas etiquetas que no añaden información al contenido al que envuelven, éstas etiquetas son `<div></div>` y `<span></span>` que simplemente nos ayudan a estructurar el documento y luego más tarde podremos modificar como se muestra su contenido en pantalla mediante reglas de estilo *Cascade StyleSheets* (*CSS*). La diferencia entre `<div></div>` y `<span></span>` la veremos más adelante.
