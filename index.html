@@ -67,19 +67,48 @@
     </footer>
   </body>
   <style>
-/* esto es un comentario CSS */
-html, body {
-  margin: 0;
-  padding: 0;
-}
+      /* esto es un comentario CSS */
+      
+      /* 1- 
+
+        Primero eliminaremos los margenes
+        y el padding que los navegadorer anaden
+        por defecto a las etiquetas html y body
+
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      */
+
+      /* 2- 
+
+        Queremos que nuestro header y nuestro footer
+        ocupen un 25% del tamano de la pantalla, 
+        para ello, indicamos que la altura sea 25vh.
+        Anadimos un padding de 2em superior e inferior,
+        de forma que los textos no esten en el borde del
+        elemento.
+
+        .--------.
+        | Header |
+        :--------:
+        |        |
+        |        |
+        |        |
+        :--------:
+        | Footer |
+        '--------'
 
       .header, .footer {
         height: 25vh;  
         padding: 2em 0;
         clear: both;
       }
+      */
 
       /* Position */
+      /*
       .relative {
         position: relative;
       }
@@ -87,6 +116,7 @@ html, body {
       .absolute {
         position: absolute;
       }
+      */
 
       .fullContainer {
         top: 0;
@@ -112,6 +142,7 @@ html, body {
       }
 
       /* Fonts */
+      /*
       .serif {
         font-family: georgia, times, serif;
       }
@@ -119,8 +150,10 @@ html, body {
       .sans-serif {
         font-family: avenir next, avenir, sans-serif;
       }
+      */
 
       /* Colors */
+      /*
       .white {
         color: white;
       }
@@ -132,8 +165,10 @@ html, body {
       .orange {
         color: #ff6300;
       }
+      */
 
       /* Background colors */
+      /*
       .bg-near-white {
         background-color: #f4f4f4;
       }
@@ -149,8 +184,10 @@ html, body {
       .bg-gold {
         background-color: #ffb700;
       }
+      */
 
       /* Titles */
+      /*
       .title {
         line-height: 1.25;
         font-weight: 400;
@@ -160,8 +197,10 @@ html, body {
       .subtitle {
         font-size: 1.5em;
       }
+      */
 
       /* Section */
+      /*
       .section {
         margin-bottom: 2em;
       }
@@ -174,14 +213,18 @@ html, body {
         padding-bottom: .5em;
         margin-bottom: 1em;
       }
+      */
 
       /* Projects */
+      /*
       .project-title {
         margin: 0;
         padding: 1em;
       }
+      */
 
       /* Social Links */
+      /*
       .social-links {
         font-size: 1.25em;
       }
@@ -196,8 +239,10 @@ html, body {
       .social-links a:hover {
         color: #999;
       }
+      */
 
       /* Helpers */
+      /*
       .max-width {
         max-width : 960px;
       margin-left: auto;
@@ -240,11 +285,22 @@ html, body {
       .grow {
         transition: transform .25s ease-out;
       }
+      */
+
+      /*
+        Esto escalara el tamano del elemento 
+        con la clase grow un 5%. 
+        Puesto que tambien le hemos dado la 
+        propiedad css *transition*, hara un 
+        una pequena animacion de escalado que
+        durara 250 milisegundos.
 
       .grow:hover {
         transform: scale(1.05, 1.05);
       }
+      */
 
+      /*
       .show {
         transition: opacity .25s ease-out;
         opacity: 0;
@@ -258,5 +314,6 @@ html, body {
         padding-top: 5em;
         padding-bottom: 5em;
       }
+      */
   </style>
 </html>
