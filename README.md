@@ -21,7 +21,9 @@ Lo primero que tenemos que saber es que **Html** **NO es un lenguage de programa
 
 <h6>Meetup Day</h6>
 
-Podemos ver el listado de todas las etiquetas *html* que hay en [w3schools](https://www.w3schools.com/tags/), aunque parezca un listado enorme, no os debéis preocupar porque sólo se suelen utilizar un pequeño número de ellas.
+Para leer una definición más completa sobre *Html*, pueden ir a [Mozilla Developer Networkd (MDN)](https://developer.mozilla.org/es/docs/Web/HTML).
+
+También podemos ver el listado de todas las etiquetas *html* que hay en [MDN](https://developer.mozilla.org/es/docs/Web/HTML/Elemento), aunque parezca un listado enorme, no os debéis preocupar porque sólo se suelen utilizar un pequeño número de ellas.
 
 ### Etiquetas no semánticas
 Hay ciertas etiquetas que no añaden información al contenido al que envuelven, éstas etiquetas son `<div></div>` y `<span></span>` que simplemente nos ayudan a estructurar el documento y luego más tarde podremos modificar como se muestra su contenido en pantalla mediante reglas de estilo *Cascade StyleSheets* (*CSS*). La diferencia entre `<div></div>` y `<span></span>` la veremos más adelante.
@@ -60,6 +62,22 @@ Las etiquetas de nuestro documento se renderizan en el navegador como cajas. Est
 
 El ancho de la caja viene definido por el **ancho del contenido** más el **padding izquierdo y derecho** y el **borde izquierdo y derecho**, por otro lado la altura viene definida por **la altura del contenido** más el **padding superior e inferior** y el  **borde superior e inferior**. 
 
+### Estructura de elementos
+
+Todos los elementos de HTML tienen una forma de visualizarse por defecto, bien sea creciendo todo el espacio disponible del documento como `<div>`,`<p>`, o `<section>` o bien adaptándose al contenido del elemento que los contiene tal y como pasa con las negritas `<strong>` o cursivas `<em>` en cualquier libro aunque podremos cambiar su forma de visualización y adaptarla a lo que necesitamos mediante la propiedad `display` de CSS. `display` sería la propiedad más importante para controlar la estructura del documento. Los principales modos de visualización de un elemento HTML en CSS serían los siguientes:
+ 
+ - **none**: Oculta por completo el elemento.
+
+ - **block**: Hace que el elemento ocupe todo el espacio disponible a lo ancho, tanto a derecha como hacia la izquierda, como un párrafo en un libro y llegará hasta el final del espacio disponible , aunque sus contenidos del elemento no ocupen todo el sitio. Los elementos que tienen este comportamiento por defecto serían todos los encabezados (`<h1>` a `<h6>`) y contenedores de elementos (`<div>`, `<section>` o `<article>`, por ejemplo)
+
+ - **inline**: Este modo de estructurar la etiqueta hace que el elemento únicamente ocupe el espacio necesario para mostrar su contenido y sin interrumpir el flujo de texto del elemento que lo contiene. Como etiquetas más representativas de este `display: inline` tendríamos los enlaces `<a>` y el elemento para agrupar texto `<span>`. Un ejemplo lo podemos ver en la imagen a continuación.
+
+ - **inline-block** sería un híbrido entre ambos, haciendo que el elemento no corte el flujo del elemento que lo contiene pero saltando de línea como bloque entero si no encuentra espacio suficiente en la línea que lo contiene.
+
+ ![Distintos tipos de display](.github/images/display.png)
+
+ Como hemos comentado, cada etiqueta HTML tiene un valor de display por defecto. Usaremos esta propiedad cuando necesitemos que se comporte semánticamente de una manera distinta a la que el diseño nos podría dar a entender. Por ejemplo, una lista de enlaces de un menú, maquetada con un `<ul>` dentro de un `<nav>` podemos convertirlo en un menú horizontal haciendo que cada `<li>` sea un elemento con `display: inline-block;`.
+
 ### Posicionamiento
 
 CSS nos permite modificar el comportamiento para que nuestras etiquetas puedan renderizarse en otro lugar diferente al que se renderizarían por defecto. Para ello, utilizaremos la propiedad *CSS* `position`. Esta propiedad puede tomar cuatro valores: `static`, `relative`, `fixed` y `absolute`.
@@ -77,17 +95,25 @@ CSS nos permite modificar el comportamiento para que nuestras etiquetas puedan r
 - `color` : color de la fuente
 - `background-color`: color de fondo
 - `background-image`: imagen de fondo
-- `font-family`: tipo de fuente
-- `font-size`: tamaño de la fuente
+- `font-family`: tipo de fuente, se pueden enlazar múltiples tipografías desde [Google Fonts](https://fonts.google.com/)
+- `font-size`: tamaño de la fuente. Por defecto los navegadores usan 16px de tamaño de tipografía. Tenedlo en cuenta.
 - `width`: ancho
 - `height`: alto
 
-[referencia de todas las propiedades *CSS*](https://www.w3schools.com/cssref/)
+[referencia de todas las propiedades *CSS*](https://developer.mozilla.org/es/docs/Web/CSS/Referencia_CSS)
 
+### Siguientes pasos
+En esta documentación del taller nos dejamos muchas cosas por explicar, aunque si que se explicarán durante la ejecución del taller, no obstante quiero hacer un pequeño listado de las cosas importantes que 
+no están aquí documentadas cómo: 
+
+- Selectores *CSS*, aplicar estilos a elementos por `id`, `clase`, atributos de la forma `a[href]` etc...
+- **Otros modos de representar etiquetas en la pantalla** tales como `display: table`, `display: inline-block` o el mas reciente y potente `display: flex`. 
+- *Flotar* elementos en pantalla con `float: left` y `float: rigth`. 
 
 ## Recursos
 
 - [Learn to Code HTML & CSS from @shayhowe](http://learn.shayhowe.com/html-css/)
+- [Mozilla Developer Network](https://developer.mozilla.org/es/)
 - [Tachyons](http://tachyons.io/)
 - [Bootstrap](http://getbootstrap.com/)
 - [Dwyl learn tachyons](https://github.com/dwyl/learn-tachyons)
