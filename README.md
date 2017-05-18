@@ -62,9 +62,9 @@ Las etiquetas de nuestro documento se renderizan en el navegador como cajas. Est
 
 El ancho de la caja viene definido por el **ancho del contenido** más el **padding izquierdo y derecho** y el **borde izquierdo y derecho**, por otro lado la altura viene definida por **la altura del contenido** más el **padding superior e inferior** y el  **borde superior e inferior**. 
 
-### Estructura de elementos
+### Tipo de caja de de un elemento
 
-Todos los elementos de HTML tienen una forma de visualizarse por defecto, bien sea creciendo todo el espacio disponible del documento como `<div>`,`<p>`, o `<section>` o bien adaptándose al contenido del elemento que los contiene tal y como pasa con las negritas `<strong>` o cursivas `<em>` en cualquier libro aunque podremos cambiar su forma de visualización y adaptarla a lo que necesitamos mediante la propiedad `display` de CSS. `display` sería la propiedad más importante para controlar la estructura del documento. Los principales modos de visualización de un elemento HTML en CSS serían los siguientes:
+Todos los elementos de HTML tienen una forma de visualizarse por defecto o **tipo de caja de representación** dentro del modelo, bien sea creciendo todo el espacio disponible del documento como `<div>`,`<p>`, o `<section>` o bien adaptándose al contenido del elemento que los contiene tal y como pasa con las negritas `<strong>` o cursivas `<em>` en cualquier libro aunque podremos cambiar su forma de visualización y adaptarla a lo que necesitamos mediante la propiedad `display` de CSS. `display` sería la propiedad más importante para controlar la estructura del documento. Los principales modos de visualización de un elemento HTML en CSS serían los siguientes:
  
  - **none**: Oculta por completo el elemento.
 
