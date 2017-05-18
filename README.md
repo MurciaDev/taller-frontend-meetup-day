@@ -70,7 +70,7 @@ Todos los elementos de HTML tienen una forma de visualizarse por defecto o **tip
 
  - **block**: Hace que el elemento ocupe todo el espacio disponible a lo ancho, tanto a derecha como hacia la izquierda, como un párrafo en un libro y llegará hasta el final del espacio disponible , aunque sus contenidos del elemento no ocupen todo el sitio. Los elementos que tienen este comportamiento por defecto serían todos los encabezados (`<h1>` a `<h6>`) y contenedores de elementos (`<div>`, `<section>` o `<article>`, por ejemplo)
 
- - **inline**: Este modo de estructurar la etiqueta hace que el elemento únicamente ocupe el espacio necesario para mostrar su contenido y sin interrumpir el flujo de texto del elemento que lo contiene. Como etiquetas más representativas de este `display: inline` tendríamos los enlaces `<a>` y el elemento para agrupar texto `<span>`. Un ejemplo lo podemos ver en la imagen a continuación.
+ - **inline**: Este modo de estructurar la etiqueta hace que el elemento únicamente ocupe el espacio necesario para mostrar su contenido y sin interrumpir el flujo de texto del elemento que lo contiene. Como etiquetas más representativas de este `display: inline` tendríamos los enlaces `<a>` y el elemento para agrupar texto `<span>`. Un ejemplo lo podemos ver en la imagen a continuación. Todo elemento que tienen la propiedad inline ignorarán muchas otras propiedades de CSS como `width`, `height` o `margin` que sí se aplican a los elementos `block` o `inline-block`. La propiedad `padding` **sí** funcionará.
 
  - **inline-block** sería un híbrido entre ambos, haciendo que el elemento no corte el flujo del elemento que lo contiene pero saltando de línea como bloque entero si no encuentra espacio suficiente en la línea que lo contiene.
 
