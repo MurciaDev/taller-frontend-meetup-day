@@ -110,6 +110,24 @@ no están aquí documentadas cómo:
 - **Otros modos de representar etiquetas en la pantalla** tales como `display: table`, `display: inline-block` o el mas reciente y potente `display: flex`. 
 - *Flotar* elementos en pantalla con `float: left` y `float: rigth`. 
 
+## Subir tu proyecto a Github Pages
+
+[Github pages](https://pages.github.com/) es un espacio de almacenamiento que nos provee github en el que podemos subir nuestras páginas web estáticas (no permite *scripting* de servidor, únicamente de cliente). Estas páginas siempre serán de la forma *tuusuario*.github.io, en nuestro caso, por ejemplo, [este enlace](https://murciafrontend.github.io/taller-frontend-meetup-day/) donde hemos subido un proyecto de prueba. Si tenéis un proyecto público en github con su propio usuario como organización también serviría.
+
+Para crear una web en *github pages* es bastante sencillo. Únicamente hay que entrar dentro de vuestro perfil de github y crear un nuevo repositorio desde el enlace que se ve en la captura:
+
+![Nuevo repositorio](.github/images/create-github-pages.png)
+
+Una vez dentro de la página que enlaza nos da la opción de crear nuestro repositorio bien con nuestro usuario o con la organización a la que pertenezcamos (lo que comentaba antes de los repositorios para proyectos). En ambos casos el nombre del repositorio **debe** coincidir con el del usuario. Como veis en la captura, [loowid](loowid.github.io) o SedueRey.
+
+![Creando el repositorio](.github/images/new-repo.png)
+
+Una vez que el repositorio esté creado github nos provee los pasos a seguir para configurarlo en nuestro ordenador para subir los HTML + CSS + JS que consideremos. Podréis hacerlo mediante línea de comandos o vuestro software para `git` preferido ([Tortoise](https://tortoisegit.org/), [Gitkraken](https://www.gitkraken.com/), vuestro IDE, etc... )
+
+![Configurando el repositorio](.github/images/setting-up-repo.png)
+
+Vuestro repositorio dará un 404 por parte de github mientras lo tengais vacío o no haya un `index.html` desde el que cargar la primera página del repositorio. Si se añaden subcarpetas al repositorio funcionaría igual, sería necesario añadir un punto de acceso mediante un `index.html`.
+
 ## Recursos
 
 - [Learn to Code HTML & CSS from @shayhowe](http://learn.shayhowe.com/html-css/)
